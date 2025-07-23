@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrandName | Official Clothing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeInBody 1s ease-in forwards;
+    }
+    @keyframes fadeInBody {
+      to {
+        opacity: 1;
+      }
+    }
+    header, .hero, .section, .footer {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease-out forwards;
+    }
+    header {
+      animation-delay: 0.3s;
+    }
+    .hero {
+      animation-delay: 0.6s;
+    }
+    .section {
+      animation-delay: 0.9s;
+    }
+    .footer {
+      animation-delay: 1.2s;
+    }
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 800;
+    }
+    .categories a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 1rem;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+    .categories a:hover {
+      color: #f4a261;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #f4a261;
+    }
+    .hero {
+      height: 90vh;
+      background: url('https://via.placeholder.com/1600x800/000000/FFFFFF?text=Your+Brand+Here') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-weight: 800;
+    }
+    .section {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .section p {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .product {
+      background: #fff;
+      border: 1px solid #eaeaea;
+      border-radius: 12px;
+      padding: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product h3 {
+      font-size: 1.2rem;
+      margin: 0.8rem 0 0.3rem;
+    }
+    .product p {
+      color: #f76c6c;
+      font-weight: bold;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .contact p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      color: #666;
+    }
+    .footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>BrandName</h1>
+      <div class="categories">
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Accessories</a>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Elevate Your Style</h1>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>At BrandName, fashion meets purpose. We create premium streetwear that expresses identity, creativity, and movement. [Fill this in later]</p>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Our Collection</h2>
+    <div class="products">
+      <a class="product" href="product1.html">
+        <img src="https://via.placeholder.com/300x400" alt="Product 1">
+        <h3>Urban Hoodie</h3>
+        <p>$69.99</p>
+      </a>
+      <a class="product" href="product2.html">
+        <img src="https://via.placeholder.com/300x400" alt="Product 2">
+        <h3>Signature Tee</h3>
+        <p>$34.99</p>
+      </a>
+      <a class="product" href="product3.html">
+        <img src="https://via.placeholder.com/300x400" alt="Product 3">
+        <h3>Essential Joggers</h3>
+        <p>$54.99</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@brandname.com</p>
+    <p>Follow us on Instagram, Twitter & TikTok</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 BrandName. All rights reserved.</p>
+  </footer>
+</body>
+</html>
